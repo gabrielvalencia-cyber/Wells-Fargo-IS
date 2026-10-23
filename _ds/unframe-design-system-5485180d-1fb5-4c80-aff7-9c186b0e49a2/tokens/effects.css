@@ -1,0 +1,29 @@
+/* ============================================================
+   Unframe — Elevation, Borders & Motion Tokens
+   Soft, neutral shadows. No colored glows except brand CTAs.
+   ============================================================ */
+:root {
+  /* Shadows — diffuse, low-contrast, neutral ink */
+  --shadow-xs:  0 1px 2px rgba(16, 16, 24, 0.06);
+  --shadow-sm:  0 1px 3px rgba(16, 16, 24, 0.08), 0 1px 2px rgba(16, 16, 24, 0.04);
+  --shadow-md:  0 4px 12px rgba(16, 16, 24, 0.08), 0 2px 4px rgba(16, 16, 24, 0.04);
+  --shadow-lg:  0 12px 32px rgba(16, 16, 24, 0.10), 0 4px 8px rgba(16, 16, 24, 0.05);
+  --shadow-xl:  0 24px 60px rgba(16, 16, 24, 0.14);
+
+  /* Brand glow — reserve for hero CTAs only */
+  --shadow-brand: 0 8px 24px rgba(120, 0, 255, 0.28);
+
+  /* Border widths */
+  --border-hairline: 1px; /* @kind other */
+  --border-thick:    2px; /* @kind other */
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(120, 0, 255, 0.30);
+
+  /* Motion — quick, confident, no bounce */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-normal: 200ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+}

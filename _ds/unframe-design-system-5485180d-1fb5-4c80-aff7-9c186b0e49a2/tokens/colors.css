@@ -1,0 +1,80 @@
+/* ============================================================
+   Unframe — Color Tokens
+   Brand spectrum sourced from the Unframe Brand Guidelines.
+   ============================================================ */
+:root {
+  /* --- Brand spectrum (the "U" gradient stops) --- */
+  --u-cyan:    #00C5EA;
+  --u-blue:    #3231DD;
+  --u-purple:  #7800FF;
+  --u-magenta: #DF00B4;
+  --u-pink:    #FF0080;
+  --u-orange:  #FF9600;
+
+  /* --- Primary accent (single-color brand actions) --- */
+  --brand:        #7800FF;   /* purple — primary */
+  --brand-strong: #5E00C7;
+  --brand-soft:   #F1E6FF;   /* tint for soft fills */
+
+  /* --- Ink / neutral scale (anchored on logo #191919) --- */
+  --ink-950: #0E0E12;
+  --ink-900: #191919;
+  --ink-800: #26262C;
+  --ink-700: #3A3A42;
+  --ink-600: #55555F;
+  --ink-500: #6E6E78;
+  --ink-400: #9595A0;
+  --ink-300: #C4C4CD;
+  --ink-200: #E3E3E9;
+  --ink-100: #F0F0F4;
+  --ink-50:  #F7F7FA;
+  --white:   #FFFFFF;
+
+  /* --- Status (used in comparison checks / success metrics) --- */
+  --positive:      #12B886;
+  --positive-soft: #E3F8F0;
+  --negative:      #F0476A;
+  --negative-soft: #FDE9ED;
+  --warning:       #FF9600;
+
+  /* ============================================================
+     Semantic aliases — prefer these in components
+     ============================================================ */
+  --text-strong:  var(--ink-900);
+  --text-body:    var(--ink-700);
+  --text-muted:   var(--ink-500);
+  --text-faint:   var(--ink-400);
+  --text-on-dark: var(--white);
+  --text-on-brand:var(--white);
+  --text-link:    var(--brand);
+
+  --surface-page:    var(--white);
+  --surface-subtle:  var(--ink-50);
+  --surface-muted:   var(--ink-100);
+  --surface-card:    var(--white);
+  --surface-dark:    var(--ink-950);
+  --surface-brand:   var(--brand);
+
+  --border-subtle:  var(--ink-200);
+  --border-default: var(--ink-300);
+  --border-strong:  var(--ink-400);
+  --border-on-dark: rgba(255,255,255,0.14);
+
+  /* ============================================================
+     Brand gradients — the signature visual asset
+     ============================================================ */
+  --gradient-brand: linear-gradient(115deg,
+    var(--u-cyan) 0%, var(--u-blue) 22%, var(--u-purple) 44%,
+    var(--u-magenta) 64%, var(--u-pink) 82%, var(--u-orange) 100%); /* @kind color */
+
+  /* Mirrors the sweep of the "U" mark: cyan down → purple → orange up */
+  --gradient-u: linear-gradient(160deg,
+    var(--u-cyan) 0%, var(--u-blue) 30%, var(--u-purple) 55%,
+    var(--u-magenta) 78%, var(--u-orange) 100%); /* @kind color */
+
+  --gradient-cool: linear-gradient(120deg, var(--u-cyan), var(--u-blue), var(--u-purple)); /* @kind color */
+  --gradient-warm: linear-gradient(120deg, var(--u-magenta), var(--u-pink), var(--u-orange)); /* @kind color */
+
+  /* Subtle tint wash for section backgrounds */
+  --gradient-wash: linear-gradient(135deg, #F6F1FF 0%, #FDF0F8 50%, #FFF4EC 100%); /* @kind color */
+}

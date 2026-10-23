@@ -1,0 +1,48 @@
+/* ============================================================
+   Unframe — Base element defaults & helpers
+   Lightweight; sets the Poppins baseline and a few utilities.
+   ============================================================ */
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Brand gradient applied as text fill — the signature treatment */
+.u-gradient-text {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradient underline that hugs the focus word/phrase inside a heading.
+   Wrap just the key phrase: <h2>… <span class="u-underline">value</span></h2> */
+.u-underline {
+  background-image: var(--gradient-brand);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.14em;
+  padding-bottom: 0.04em;
+}
+
+.u-eyebrow {
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+::selection {
+  background: rgba(120, 0, 255, 0.16);
+}

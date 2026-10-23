@@ -1,0 +1,10 @@
+/* ============================================================
+   Unframe — Webfonts
+   Brand typeface: Poppins (Bold / Regular / Light).
+   Poppins is an open Google font, so we load the authentic
+   family from Google Fonts rather than a substitute.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Monospace companion for code / technical specs in decks */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
